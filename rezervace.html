@@ -1,0 +1,28 @@
+<!doctype html><html lang="cs"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Rezervace | Půjčovna</title><meta name="description" content="Půjčovna vozíku, JBL PartyBox 320 a projektoru Optoma GT2100HDR."><link rel="stylesheet" href="style.css"></head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="index.html">PŮJČOVNA<span>.</span></a>
+    <button class="menu" aria-label="Menu">☰</button>
+    <nav>
+      <a href="index.html">Úvod</a><a href="vozik.html">Vozík</a><a href="jbl.html">JBL</a>
+      <a href="projektor.html">Projektor</a><a href="cenik.html">Ceník</a>
+      <a href="rezervace.html">Rezervace</a><a href="kontakt.html">Kontakt</a>
+    </nav>
+    <a class="pill" href="rezervace.html">Rezervovat</a>
+  </div>
+</header><main>
+<section class="simpleHero"><div class="wrap"><span class="kicker">REZERVACE</span><h1>Vyber termín.</h1><p class="lead">Odeslání formuláře vytvoří připravenou SMS do telefonu. Rezervace platí až po potvrzení.</p></div></section>
+<section class="section"><div class="wrap reserveGrid"><form id="reserveForm" class="form">
+<div class="two"><label>Jméno<input name="name" required placeholder="Jan Novák"></label><label>Telefon<input name="phone" required placeholder="+420..."></label></div>
+<div class="two"><label>Od<input type="date" name="from" required></label><label>Do<input type="date" name="to" required></label></div>
+<label>Co chcete půjčit<select name="item" id="item" required><option value="">Vyberte</option><option value="vozik">Přívěsný vozík – 790 Kč/den</option><option value="jbl1">1× JBL PartyBox 320 – 700 Kč/den</option><option value="jbl2">2× JBL PartyBox 320 – 1 400 Kč/den</option><option value="projektor">Optoma GT2100HDR – 2 000 Kč/den</option><option value="kombinace">Kombinace vybavení</option><option value="zakladni">Základní komplet</option><option value="party">Párty komplet (bez vozíku)</option><option value="filmovy">Filmový komplet</option></select></label>
+<label>Poznámka<textarea name="note" rows="5" placeholder="Co potřebujete doplnit?"></textarea></label>
+<p class="photoNote">Vratné kauce se k orientační ceně pronájmu nepřičítají a vrací se po řádném vrácení vybavení.</p><div class="estimate" id="estimate">Orientační cena se zobrazí po výběru termínu a vybavení.</div>
+<button class="btn lime full" type="submit">Pokračovat přes SMS</button><a class="btn full" href="tel:+420776166198">Nebo rovnou zavolat</a>
+</form><aside class="reserveAside"><h2>Kontakt</h2><a class="phone" href="tel:+420776166198">776 166 198</a><p>Potřebuješ něco nestandardního? Zavolej a domluvíme se.</p><div class="note"><b>Důležité:</b> formulář sám neblokuje termín. Dostupnost potvrdíme při domluvě.</div></aside></div></section>
+</main>
+<footer><div class="wrap foot"><div><b>PŮJČOVNA.</b><br><span>Vozík • JBL • Projektor</span></div>
+<div><a href="tel:+420776166198">+420 776 166 198</a><br><span>Rezervace po potvrzení</span></div></div></footer>
+<script src="app.js"></script></body></html>
